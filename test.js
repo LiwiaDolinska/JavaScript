@@ -1,10 +1,12 @@
+var a = 7;
 
-var links = document.getElementsByTagName("a");
+var b = 5;
 
-for (i = 1; i < links.length; i++) {
+if (isNaN(a)){
 
-    console.log("This is link number" + 1);
-    
+    console.log("that is true");
+
+} else{
+
+    console.log("meaning of life is " + (a + b));
 }
-
-document.write("All links now looped");
