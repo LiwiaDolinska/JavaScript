@@ -1,12 +1,17 @@
-alert("hey");
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-var title = document.getElementById("page-title");
-title.onclick = function(){
-  alert("you clicked me");
+button.onclick = function(){
+    if(content.className == "open"){
+        // shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
 
-};  
-function (){
-  alert("you clicked me");
-  
-}
+    } else{
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show less";
+
+    }
+};
 
